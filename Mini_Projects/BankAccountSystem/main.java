@@ -3,6 +3,8 @@ class BankAccount{
     private int accNo = -1;
     private String bankname;
     private int balance = 0;
+    BankAccount(){
+    }
     BankAccount(int accNo, String bankname){
         this.accNo = accNo;
         this.bankname = bankname;
@@ -17,12 +19,20 @@ class BankAccount{
     public void checkBalance(){
         System.out.println("Total Balance in your account: "+ balance+" rupees");
     }
+    public void setaccNo(int n){
+        accNo = n;
+    }
+    public void setbankname(String str){
+        bankname = str;
+    }
 }
 
 public class main{
     public static void main(String[] a){
         
         int option = -1;
+        BankAccount b1 = new BankAccount();      
+        while(option!=5){
         System.out.println("BANK ACCOUNT SYSTEM ");
         System.out.println("***********************");
         System.out.println("How can I help you today....");
@@ -33,14 +43,15 @@ public class main{
         System.out.println("5.Exit");
         Scanner sc = new Scanner(System.in);
         option = sc.nextInt();
-        while(option!=5){
             switch(option){
                 case 1:{
                     System.out.println("Enter Account Number: ");
                     int n = sc.nextInt();
+                    sc.nextLine();
                     System.out.println("Enter Bank Name: ");
-                    String str = sc.nextString();
-                    BankAccount b1 = new BankAccount(n,str);
+                    String str = sc.nextLine();
+                    b1.setaccNo(n);
+                    b1.setbankname(str);
                     break;
                 }
                 case 2:{
