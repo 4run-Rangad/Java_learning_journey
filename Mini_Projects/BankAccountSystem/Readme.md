@@ -1,9 +1,18 @@
-#BANK ACCOUNT SYSTEM
+# BANK ACCOUNT MANAGEMENT SYSTEM
 
-*Used OOP principles
+## Description
+A console-based Java application to manage bank accounts.
 
-In this system a user can : 
-1. Create Account
-2. Deposit 
-3. Withdrawal
-4. Check Balance.
+## Features 
+- Create Account
+- Deposit and Withdraw
+- Check Balance
+- Exception Handling
+
+## Technologies
+- Java
+- OOP
+- Collections(ArrayList)
+
+## Author
+Arun RAngad
