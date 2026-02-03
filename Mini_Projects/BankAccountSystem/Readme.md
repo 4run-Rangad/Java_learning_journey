@@ -15,4 +15,4 @@ A console-based Java application to manage bank accounts.
 - Collections(ArrayList)
 
 ## Author
-Arun RAngad
+Arun Rangad
